@@ -1,0 +1,85 @@
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to left top, #3ae37c, #4ae67e, #58ea81, #64ed83, #6ff086);
+    font-family: 'Chivo Mono', monospace;
+}
+
+.show-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 2em;
+    color: #fff;
+    padding: 0.35rem;
+    cursor: pointer;
+}
+
+.show-modal:hover{
+    border-bottom: 6px solid #fff;
+    border-right: 5px solid #fff;
+    transition: all 75ms ease;
+}
+
+.show-modal:focus{
+    border: 3px solid #fff;
+    transition: all 75ms ease; 
+}
+
+.modal{
+    background: #fff;
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 5;
+    line-height: 30px;
+}
+
+.modal .close-modal{
+    float: right;
+    background: #fff;
+    border: none;
+    font-size: 1.75em;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.modal .close-modal:hover{
+    background: #eee;
+}
+
+
+.modal h1{
+    margin: 1.25rem 0.5rem;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.25;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
